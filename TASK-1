@@ -1,0 +1,17 @@
+/*This is the Task 1 of DevOps of Installing and Configuring the Jenkins*/
+/*We can download the Jenkins directly from the Browser with the link below*/
+/*https://www.jenkins.io/download/*/
+/*The sample pipeline script I have taken is to print Hello World*/
+
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
